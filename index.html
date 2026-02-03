@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/murder-mystery/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Murder Mystery Board</title>
     <style>
@@ -24,7 +24,7 @@
       setTimeout(function() {
         var root = document.getElementById('root');
         if (root && root.innerHTML.trim() === '') {
-          root.innerHTML = '<div style="padding: 20px; font-family: sans-serif;"><h1 style="color: #dc2626;">Error Loading Application</h1><p>The JavaScript files failed to load. Please check:</p><ul><li>That GitHub Pages is properly configured</li><li>That the deployment workflow completed successfully</li><li>The browser console for error messages (F12)</li></ul><p>If the problem persists, please check the <a href="https://github.com/bwhua/murder-mystery/actions">GitHub Actions</a> workflow status.</p></div>';
+          root.innerHTML = '<div style="padding: 20px; font-family: sans-serif;"><h1 style="color: #dc2626;">Error Loading Application</h1><p>The JavaScript files failed to load. Please check:</p><ul><li>That Vercel deployment completed successfully</li><li>The browser console for error messages (F12)</li><li>Try refreshing the page</li></ul><p>If the problem persists, please check your Vercel deployment dashboard.</p></div>';
         }
       }, 5000);
     </script>

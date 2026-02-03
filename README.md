@@ -2,7 +2,9 @@
 
 An interactive murder mystery cork board with red wire connections. Create suspects, add testimonials, connect people, and build a timeline of events.
 
-🌐 **Live Demo**: <a href="https://bwhua.github.io/murder-mystery/" target="_blank" rel="noopener noreferrer">View on GitHub Pages ↗</a>
+🌐 **Live Demo**: <a href="https://murder-mystery-board.vercel.app/" target="_blank" rel="noopener noreferrer">View on Vercel ↗</a>
+
+> **Note**: After deploying to Vercel, update this link with your actual Vercel deployment URL.
 
 ## Features
 
@@ -64,6 +66,25 @@ npm run build
 
 The built files will be in the `dist` folder.
 
+## Deployment
 
+This project is configured for deployment on [Vercel](https://vercel.com/).
 
+### Deploying to Vercel
+
+1. Push your code to GitHub
+2. Import your repository on [Vercel](https://vercel.com/new)
+3. Vercel will automatically detect the Vite configuration
+4. Click "Deploy" - Vercel will build and deploy your app automatically
+
+The `vercel.json` file is already configured with the correct settings for this Vite + React project.
+
+### Manual Deployment
+
+You can also deploy using the Vercel CLI:
+
+```bash
+npm i -g vercel
+vercel
+```
 
