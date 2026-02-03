@@ -2,7 +2,7 @@
 
 An interactive murder mystery cork board with red wire connections. Create suspects, add testimonials, connect people, and build a timeline of events.
 
-🌐 **Live Demo**: [View on GitHub Pages](https://bwhua.github.io/murder-mystery/)
+🌐 **Live Demo**: <a href="https://bwhua.github.io/murder-mystery/" target="_blank" rel="noopener noreferrer">View on GitHub Pages</a>
 
 ## Features
 
