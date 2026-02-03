@@ -71,7 +71,7 @@ export default function Sidebar({
   const handleAddPerson = () => {
     if (!newPerson.name.trim()) return;
     
-    const personData: Omit<Person, 'id' | 'x' | 'y' | 'testimonials'> = {
+    const personData: Omit<Person, 'id' | 'x' | 'y'> = {
       name: newPerson.name,
       role: newPerson.role,
       description: newPerson.description,

@@ -19,12 +19,12 @@ export default function Board({
   people,
   connections,
   selectedPerson,
-  editingConnection,
+  editingConnection: _editingConnection,
   onSelectPerson,
   onMovePerson,
   onResizePerson,
-  onAddConnection,
-  onDeleteConnection,
+  onAddConnection: _onAddConnection,
+  onDeleteConnection: _onDeleteConnection,
 }: BoardProps) {
   const boardRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);

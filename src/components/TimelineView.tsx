@@ -59,7 +59,7 @@ export default function TimelineView({ timelineEvents, people }: TimelineViewPro
                 </div>
               </div>
               <div className="timeline-events">
-                {events.map((event, eventIndex) => {
+                {events.map((event) => {
                   const eventDateTime = new Date(`${event.date}T${event.time}`);
                   const formattedTime = eventDateTime.toLocaleTimeString('en-US', {
                     hour: 'numeric',
@@ -74,7 +74,7 @@ export default function TimelineView({ timelineEvents, people }: TimelineViewPro
                         <div className="timeline-event-description">{event.description}</div>
                         {event.personIds.length > 0 && (
                           <div className="timeline-event-people">
-                            {event.personIds.map((personId, idx) => {
+                            {event.personIds.map((personId) => {
                               const person = people.find(p => p.id === personId);
                               if (!person) return null;
                               return (
