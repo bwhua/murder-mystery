@@ -1,0 +1,110 @@
+.board {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #c9a37c;
+  background-image: 
+    radial-gradient(circle at 25% 25%, #d4a574 2px, transparent 2px),
+    radial-gradient(circle at 75% 75%, #c49464 1.5px, transparent 1.5px),
+    radial-gradient(circle at 50% 50%, rgba(196, 148, 100, 0.3) 1px, transparent 1px),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(196, 148, 100, 0.1) 2px,
+      rgba(196, 148, 100, 0.1) 4px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 2px,
+      rgba(196, 148, 100, 0.1) 2px,
+      rgba(196, 148, 100, 0.1) 4px
+    ),
+    linear-gradient(
+      135deg,
+      rgba(196, 148, 100, 0.2) 0%,
+      transparent 50%,
+      rgba(196, 148, 100, 0.2) 100%
+    );
+  background-size: 
+    40px 40px,
+    60px 60px,
+    20px 20px,
+    8px 8px,
+    8px 8px,
+    100% 100%;
+  overflow: hidden;
+  cursor: grab;
+  user-select: none;
+}
+
+.board:active {
+  cursor: grabbing;
+}
+
+.board-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  will-change: transform;
+  z-index: 5;
+}
+
+.zoom-controls {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(31, 41, 55, 0.9);
+  padding: 8px 12px;
+  border-radius: 8px;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.zoom-controls button {
+  background: #374151;
+  border: 1px solid #4b5563;
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.zoom-controls button:hover:not(:disabled) {
+  background: #4b5563;
+}
+
+.zoom-controls button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.zoom-level {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  min-width: 50px;
+  text-align: center;
+}
+
+.connections-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+}
+

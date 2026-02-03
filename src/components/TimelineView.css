@@ -1,0 +1,122 @@
+.timeline-view {
+  flex: 1;
+  background: #f9fafb;
+  overflow-y: auto;
+  padding: 24px;
+}
+
+.timeline-view.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty-message {
+  text-align: center;
+  color: #6b7280;
+}
+
+.empty-message h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #374151;
+}
+
+.empty-message p {
+  font-size: 14px;
+}
+
+.timeline-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline-day {
+  margin-bottom: 32px;
+}
+
+.timeline-day-header {
+  margin-bottom: 16px;
+}
+
+.timeline-date-line {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.timeline-date-marker {
+  width: 4px;
+  height: 32px;
+  background: #dc2626;
+  border-radius: 2px;
+}
+
+.timeline-date-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.timeline-events {
+  position: relative;
+}
+
+.timeline-event-item {
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.timeline-event-content {
+  width: 100%;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s;
+}
+
+.timeline-event-content:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-event-time {
+  font-size: 14px;
+  font-weight: 600;
+  color: #dc2626;
+  margin-bottom: 8px;
+}
+
+.timeline-event-description {
+  font-size: 15px;
+  color: #374151;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.timeline-event-people {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.timeline-person-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+  background: #dc2626;
+}
+
+.timeline-day-separator {
+  height: 1px;
+  background: #e5e7eb;
+  margin: 24px 0;
+}
+
+
