@@ -2,9 +2,7 @@
 
 An interactive murder mystery cork board with red wire connections. Create suspects, add testimonials, connect people, and build a timeline of events.
 
-🌐 **Live Demo**: <a href="https://murder-mystery-board.vercel.app/" target="_blank" rel="noopener noreferrer">View on Vercel ↗</a>
-
-> **Note**: After deploying to Vercel, update this link with your actual Vercel deployment URL.
+🌐 **Live Demo**: <a href="https://murder-mystery-drab.vercel.app/" target="_blank" rel="noopener noreferrer">View on Vercel ↗</a>
 
 ## Features
 
