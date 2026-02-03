@@ -5,10 +5,29 @@
     <link rel="icon" type="image/svg+xml" href="/murder-mystery/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Murder Mystery Board</title>
+    <style>
+      #root:empty::before {
+        content: 'Loading...';
+        display: block;
+        padding: 20px;
+        text-align: center;
+        font-family: sans-serif;
+        color: #666;
+      }
+    </style>
   </head>
     <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Fallback: Show error if JS doesn't load after 5 seconds
+      setTimeout(function() {
+        var root = document.getElementById('root');
+        if (root && root.innerHTML.trim() === '') {
+          root.innerHTML = '<div style="padding: 20px; font-family: sans-serif;"><h1 style="color: #dc2626;">Error Loading Application</h1><p>The JavaScript files failed to load. Please check:</p><ul><li>That GitHub Pages is properly configured</li><li>That the deployment workflow completed successfully</li><li>The browser console for error messages (F12)</li></ul><p>If the problem persists, please check the <a href="https://github.com/bwhua/murder-mystery/actions">GitHub Actions</a> workflow status.</p></div>';
+        }
+      }, 5000);
+    </script>
   </body>
 </html>
 
